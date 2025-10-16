@@ -11,12 +11,22 @@
     font-weight: 400;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    margin: 75px 0 0 360px;
+}
+
 body {
     background-color: #0E1014;
 }
 
 main {
     color: white;
+    text-align: center;;
 }
 
 span {
@@ -25,6 +35,15 @@ span {
 
 h1 {
     font-family: "Unbounded", sans-serif;
+    font-size: 64px;
+    margin-top: 60px;
+}
+
+p {
+    font-size: 24px;
+    margin: 24px auto 0;
+    width: 792px;
+    text-align: center;
 }
 
 p, a {
@@ -41,7 +60,8 @@ main a {
     background-color: #9747FF;
     color: white;
     border-radius: 36px;
-    font-size: 24px
+    font-size: 24px;
+    margin: 40px auto;
 }
 
 main a:hover {
@@ -52,6 +72,30 @@ section img {
     display: block;
     width: 792px;
     height: 446px;
+    margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+    header img {
+        margin: 65px 0  0 60px;
+    }
+
+    p{
+      width: 648px;  
+    }
+}
+
+@media (max-width: 375px) {
+    header img {
+        margin: 32px 0 0 16px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        width: 340px;
+        font-size: 20px;
+    }
+}
 
